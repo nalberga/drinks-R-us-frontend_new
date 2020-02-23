@@ -2,14 +2,14 @@ import React from 'react';
 import '../App.css';
 
 /*can also do function Footer()*/
-class Liquors extends React.Component {
+class Register extends React.Component {
     render() {
        return (
           <div>
-             <h2>Liquors Page</h2>
+             <h2>Register Page</h2>
           </div>
        );
     }
   }
 
-  export default Liquors;
+  export default Register;
