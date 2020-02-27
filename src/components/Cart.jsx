@@ -5,16 +5,16 @@ import '../App.css';
 class Cart extends React.Component {
     render() {
        return (       
-        <div class="row bg-info text-white">
-        <div class="col">
+        <div className="row bg-info text-white">
+        <div className="col">
           SKU: {this.props.product}
         </div>
-        <div class="col">
+        <div className="col">
           Units: {this.props.units}&nbsp;&nbsp;&nbsp;
-          <button type="button" class="btn btn-outline-warning bg-success">+</button>
-          <button type="button" class="btn btn-outline-warning bg-success">-</button>
+          <button type="button" className="btn btn-outline-warning bg-success">+</button>
+          <button type="button" className="btn btn-outline-warning bg-success">-</button>
         </div>
-        <div class="col">
+        <div className="col">
           Price: {this.props.price}
         </div>
       </div>  
