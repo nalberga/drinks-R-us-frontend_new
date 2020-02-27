@@ -13,7 +13,8 @@ class Products extends React.Component {
                         <h5 className="card-title">{this.props.product}</h5>
                         <p className="card-text">{this.props.description}</p>
                         <p className="card-text">{this.props.price}$</p>
-                        <a className="btn btn-primary">Go somewhere</a>
+                        <button className="btn btn-primary" onClick={this.props.onClick}>Add to Cart</button>
+                
                     </div>
                 </div>
             </div>

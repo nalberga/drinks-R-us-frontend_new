@@ -11,10 +11,6 @@ import Wine from  '../pages/Wine';
 
 import { NavLink, Switch, Route } from 'react-router-dom';
 
-const cart = 
-[{"id":1,"product":"Best Intentions, The (Den goda viljan)","description":"odio in hac habitasse platea","price":15,"image":"http://dummyimage.com/250x250.jpg/dddddd/000000", "units":2},
-{"id":2,"product":"Brother Orchid","description":"quam pede lobortis ligula sit","price":90,"image":"http://dummyimage.com/250x250.jpg/ff4444/ffffff", "units": 5}];
-
 class Header extends React.Component {
 
     constructor(props) {
@@ -22,9 +18,6 @@ class Header extends React.Component {
         super(props);
     
         this.state = {
-          cart: cart,
-          unitTotalQty: 0,
-          unitTotalPrice: 0
         };
       }
 
@@ -33,7 +26,7 @@ class Header extends React.Component {
         /*Need to relook at this part for quantity*/
         let unitTotal = 0;
 
-        const totalCartQty = this.state.cart.forEach( (cart, index) => 
+        const totalCartQty = this.props.check.cart.forEach( (cart, index) => 
         {
           unitTotal += cart.units;
           return unitTotal;
