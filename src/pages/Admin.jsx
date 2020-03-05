@@ -1,8 +1,7 @@
-  import React, { Component } from 'react'
-  import { loginUser } from '../api/userApi'
+import React, { Component } from 'react'
   import '../App.css';
 
-  class Login extends Component {
+  class Admin extends Component {
    constructor() {
      super()
      this.state = {
@@ -25,7 +24,7 @@
        email: this.state.email,
        password: this.state.password
      }
-   //  loginUser(user);
+   //  AdminUser(user);
  
    }
  
@@ -71,4 +70,4 @@
      )
    }
  }
- export default Login;
+ export default Admin;
